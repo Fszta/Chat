@@ -20,7 +20,16 @@ jobs:
     - name: Run tests
       run: sbt test
 
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: sbt coverage test
+    - name: Coverage Report
+      run: sbt coverageReport
     - name: Upload coverage to Codecov
-      run: |
-        sbt clean coverage test coverageReport
-        bash <(curl -s https://codecov.io/bash)
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        fail_ci_if_error: true
+
+
+
