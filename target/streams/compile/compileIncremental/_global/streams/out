@@ -1,0 +1,95 @@
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connect.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/routes/Controller.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/home/fsz/Development/Chat/src/main/scala/com/chat/websocket/ConnectionHandler.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/utils/Log.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connection.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/fsz/Development/Chat/src/main/scala/com/chat/Server.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(/home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/websocket/Connect$.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/websocket/Connect.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/utils/Configuration.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/routes/Controller.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/routes/Controller$.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/Server$.class, /home/fsz/Development/Chat/target/scala-2.12/classes/com/chat/Server.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set(/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.20/akka-slf4j_2.12-2.5.20.jar, /home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(com.chat.websocket.Connect, com.chat.routes.Controller, com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(/home/fsz/Development/Chat/src/main/scala/com/chat/utils/Configuration.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/routes/Controller.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connect.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/Server.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(com.chat.websocket.Connect, com.chat.routes.Controller, com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/fsz/Development/Chat/src/main/scala/com/chat/utils/Configuration.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connection.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/routes/Controller.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/utils/Log.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connect.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/Server.scala, /home/fsz/Development/Chat/src/main/scala/com/chat/websocket/ConnectionHandler.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.websocket.Connect, com.chat.routes.Controller, com.chat.Server[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 5 Scala sources to /home/fsz/Development/Chat/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.5:compile for Scala 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.5:compile for Scala 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 21af5536 for Scala compiler version 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/fsz/Development/Chat/target/scala-2.12/classes:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.20/akka-stream_2.12-2.5.20.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.20/akka-slf4j_2.12-2.5.20.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.20/akka-actor_2.12-2.5.20.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.20/akka-protobuf_2.12-2.5.20.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.3.7/ssl-config-core_2.12-0.3.7.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.1.7/akka-parsing_2.12-10.1.7.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar:/home/fsz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 5.090416578 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.Server...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.Server[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.Server,ModifiedNames(changes = UsedName(writeLog,[Default]), UsedName(logger,[Default]), UsedName(Server,[Default]))) invalidates 1 classes due to The com.chat.Server has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(writeLog,[Default]), UsedName(logger,[Default]), UsedName(Server,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.utils.Log...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.utils.Log[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding com.chat.Server by com.chat.utils.Log[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.Server, com.chat.utils.Log)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of com.chat.Server: Set(UsedName(writeLog,[Default]), UsedName(Log,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.utils.Log,ModifiedNames(changes = UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(writeLog,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(logger,[Default]), UsedName(##,[Default]), UsedName($init$,[Default]), UsedName(Log,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 2 classes due to The com.chat.utils.Log has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(writeLog,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(logger,[Default]), UsedName(##,[Default]), UsedName($init$,[Default]), UsedName(Log,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.Server, com.chat.utils.Log)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.websocket.ConnectionHandler...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.websocket.ConnectionHandler[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.websocket.ConnectionHandler)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of com.chat.Server: Set(UsedName(newConnection,[Default]), UsedName(ConnectionHandler,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.websocket.ConnectionHandler,ModifiedNames(changes = UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(newConnection,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(ConnectionHandler,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 2 classes due to The com.chat.websocket.ConnectionHandler has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(newConnection,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(ConnectionHandler,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.websocket.ConnectionHandler)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.websocket.Connection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.websocket.Connection[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.websocket.Connection)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following member ref dependencies of com.chat.websocket.Connection are invalidated:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.chat.Server[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.chat.websocket.ConnectionHandler[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.websocket.Connection,ModifiedNames(changes = UsedName(websocketConnection,[Default]), UsedName(Connection,[Default]), UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(materializer,[Implicit]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(com;chat;websocket;Connection;init;,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 3 classes due to The com.chat.websocket.Connection has the following implicit definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(materializer,[Implicit]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.websocket.Connection)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(com.chat.websocket.ConnectionHandler, com.chat.Server)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.routes.Controller...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.routes.Controller[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.routes.Controller)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.routes.Controller,ModifiedNames(changes = UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(Controller,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 1 classes due to The com.chat.routes.Controller has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(Controller,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.routes.Controller)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from com.chat.websocket.Connect...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: com.chat.websocket.Connect[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(com.chat.websocket.Connect)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(com.chat.websocket.Connect,ModifiedNames(changes = UsedName(websocketConnection,[Default]), UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(Connect,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 1 classes due to The com.chat.websocket.Connect has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(websocketConnection,[Default]), UsedName(toString,[Default]), UsedName(equals,[Default]), UsedName(Connect,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName($isInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName($asInstanceOf,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(com.chat.websocket.Connect)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

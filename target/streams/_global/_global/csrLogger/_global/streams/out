@@ -1,0 +1,17 @@
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.0/play-json_2.12-2.9.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.0/play-functional_2.12-2.9.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.4/jackson-datatype-jsr310-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.4/jackson-datatype-jdk8-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-base/2.10.4/jackson-base-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.10.4/jackson-modules-java8-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-bom/2.10.4/jackson-bom-2.10.4.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.4/jackson-datatype-jdk8-2.10.4.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.4/jackson-datatype-jsr310-2.10.4.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.0/play-functional_2.12-2.9.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.0/play-json_2.12-2.9.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.jar

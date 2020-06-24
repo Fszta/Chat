@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/fsz/Development/Chat/src/main/scala/com/chat/websocket/Connection.scala:18:12: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Streamed(_), Streamed(_), Strict(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m      .map {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
