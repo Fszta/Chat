@@ -21,9 +21,10 @@ jobs:
       run: sbt test
 
     - name: Upload coverage to Codecov
+
+      run: |
+        sbt clean coverage test coverageReport
+        bash <(curl -s https://codecov.io/bash)
       with:
         fail_ci_if_error: true
         token: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          sbt clean coverage test coverageReport
-          bash <(curl -s https://codecov.io/bash)
