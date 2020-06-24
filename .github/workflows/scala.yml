@@ -21,8 +21,8 @@ jobs:
       run: sbt test
 
     - name: Upload coverage to Codecov
+      token: ${{ secrets.CODECOV_TOKEN }}
 
       run: |
-        token: ${{ secrets.CODECOV_TOKEN }}
         sbt clean coverage test coverageReport
         bash <(curl -s https://codecov.io/bash)
