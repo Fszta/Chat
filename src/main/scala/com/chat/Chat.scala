@@ -7,11 +7,7 @@ import akka.stream.{ActorMaterializer, OverflowStrategy}
 import akka.stream.scaladsl.{Flow, Keep, Sink, Source}
 import com.chat.room.Events.{CreateRoomIfNotExists, JoinRoom, LeaveRoom, User}
 
-class Chat(roomHandler: ActorRef) extends Directives {
-  implicit val actorSystem = ActorSystem()
-  implicit val materializer = ActorMaterializer()
-
-
+class Chat(roomHandler: ActorRef)(implicit val system: ActorSystem, implicit val materializer: ActorMaterializer) extends Directives {
   /**
    * Web socket
    * @param userName name of the user
