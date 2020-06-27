@@ -30,7 +30,7 @@ class Chat(roomHandler: ActorRef)(implicit val system: ActorSystem, implicit val
 
     }.to(Sink.onComplete { _ =>
       // Remove user from room
-      roomHandler ! LeaveRoom(user)
+      roomHandler ! LeaveRoom(user,roomId)
       // Kill actor
       actorRef ! PoisonPill
     })
