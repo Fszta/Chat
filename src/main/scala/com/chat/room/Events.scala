@@ -6,8 +6,10 @@ import akka.actor.ActorRef
 object Events {
   case class JoinRoom(user: User,actorRef: ActorRef)
   case class LeaveRoom(user: User)
+  case class RemoveRoom(id: Int)
   case class CreateRoomIfNotExists(id: Int)
   case class GetRooms()
+  case class GetRoomActor(id:Int)
   case class GetUsers()
   case class SendMessage(sender: String, content: String, timestamp: Long)
   case class Message(sender: String, content: String, timestamp: Long)
