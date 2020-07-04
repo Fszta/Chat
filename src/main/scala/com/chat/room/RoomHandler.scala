@@ -1,19 +1,24 @@
 package com.chat.room
 
-import akka.actor.{Actor, ActorRef, ActorSystem, Props}
-import akka.stream.ActorMaterializer
-import com.chat.room.Events.{CreateRoomIfNotExists, GetRooms}
+import akka.actor.{Actor, ActorRef, PoisonPill, Props}
+import com.chat.room.Events.{CreateRoomIfNotExists, GetRoomActor, GetRooms, RemoveRoom}
 
 class RoomHandler() extends Actor {
   var rooms = scala.collection.mutable.Map[Int, ActorRef]()
-  implicit val actorSystem = ActorSystem()
-  implicit val materializer = ActorMaterializer()
 
   override def receive: Receive = {
     case CreateRoomIfNotExists(id) =>
-      if (!rooms.contains(id)) rooms += id -> actorSystem.actorOf(Props(new Room(id)))
+      if (!rooms.contains(id)) rooms += id -> context.actorOf(Props(new Room(id)))
+    // Return all existing rooms
     case GetRooms =>
       sender() ! rooms
+    // Return a specific room to sender
+    case GetRoomActor(id) =>
+      sender() ! rooms(id)
+    // Remove a room based on its id
+    case RemoveRoom(id) =>
+      rooms(id) ! PoisonPill
+      rooms -= id
   }
 }
 
