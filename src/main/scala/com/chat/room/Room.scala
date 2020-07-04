@@ -1,6 +1,7 @@
 package com.chat.room
 
-import akka.actor.{Actor, ActorRef}
+import akka.actor.{Actor, ActorRef, PoisonPill}
+import com.chat.utils.Formater.messageToJsonStr
 import com.chat.room.Events._
 
 class Room(id: Int) extends Actor {
@@ -8,17 +9,19 @@ class Room(id: Int) extends Actor {
   val roomId = id
 
   override def receive: Receive = {
+    // Connect user to room
     case JoinRoom(user, actorRef) =>
       users += user -> actorRef
-      println(s"${user.name} join")
-
+    // Return users connected to the room
     case GetUsers =>
       sender() ! users
-
+    // Send message to all connected users
     case SendMessage(sender, content, timestamp) =>
-      users.map(_._2 ! content)
-
+      val formatedMessage = messageToJsonStr(Message(sender,content,timestamp))
+      users.map(_._2 ! formatedMessage)
+    // Remove user from room
     case LeaveRoom(user) =>
       users -= user
+      if (users.size == 0) context.parent ! RemoveRoom(id)
   }
 }
