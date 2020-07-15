@@ -6,6 +6,7 @@ import akka.http.scaladsl.server.{Directives, Route}
 import akka.stream.{ActorMaterializer, OverflowStrategy}
 import akka.stream.scaladsl.{Flow, Keep, Sink, Source}
 import com.chat.room.Events.{CreateRoomIfNotExists, GetRoomActor, JoinRoom, LeaveRoom, SendMessage, User}
+import com.chat.utils.Formater.getActualTimestamp
 import scala.concurrent.Await
 import scala.concurrent.duration._
 import akka.pattern.ask
@@ -30,7 +31,7 @@ class Chat(roomHandler: ActorRef)(implicit val system: ActorSystem, implicit val
 
     val sink = Flow[Message].map {
       case TextMessage.Strict(content) =>
-        actorRef ! SendMessage(userName, content,getActualTimestamp)
+        roomActor ! SendMessage(userName, content,getActualTimestamp)
     }.to(Sink.onComplete { _ =>
       // Remove user from room
       roomActor ! LeaveRoom(user)
@@ -54,8 +55,8 @@ class Chat(roomHandler: ActorRef)(implicit val system: ActorSystem, implicit val
 
     // Create new user
     val uuid = java.util.UUID.randomUUID()
-    val user = User(userName, uuid)
-    userActor ! "Successfully connected"
+    val user = User(userName, uuid, getActualTimestamp)
+    //userActor ! "Successfully connected"
 
     // Create room if not exists
     roomHandler ! CreateRoomIfNotExists(roomId)
@@ -68,12 +69,6 @@ class Chat(roomHandler: ActorRef)(implicit val system: ActorSystem, implicit val
 
     (user, roomActor)
   }
-
-  /**
-   * Get actual timestamp in millisecond
-   * @return timestamp as long
-   */
-  def getActualTimestamp = java.lang.System.currentTimeMillis()
 
   val wsRoute : Route =
     pathPrefix("api") {

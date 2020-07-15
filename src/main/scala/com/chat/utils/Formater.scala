@@ -20,4 +20,10 @@ object Formater {
    * @return user list as json string
    */
   def userListToJsonStr(userList: List[User]): String = Json.toJson(userList).toString()
+
+  /**
+   * Get actual timestamp in millisecond
+   * @return timestamp as long
+   */
+  def getActualTimestamp = java.lang.System.currentTimeMillis()
 }
