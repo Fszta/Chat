@@ -20,8 +20,9 @@ class FormaterTest extends FunSuite {
   test("testUserListToJsonStr"){
     val userName = "Tester"
     val userUUID = generateUUID
-    val userTest = User(userName,userUUID)
-    val expectedJson = s"""[{"name":"$userName","uuid":"$userUUID"}]"""
+    val actualTimestamp = getActualTimestamp
+    val userTest = User(userName,userUUID,actualTimestamp)
+    val expectedJson = s"""[{"name":"$userName","uuid":"$userUUID","connectedAt":$actualTimestamp}]"""
     val formatedJson = userListToJsonStr(List(userTest))
     assert(expectedJson==formatedJson)
   }
