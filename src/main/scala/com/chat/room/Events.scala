@@ -13,5 +13,5 @@ object Events {
   case class GetUsers()
   case class SendMessage(sender: String, content: String, timestamp: Long)
   case class Message(sender: String, content: String, timestamp: Long)
-  case class User(name: String, uuid : UUID)
+  case class User(name: String, uuid : UUID, connectedAt: Long)
 }
