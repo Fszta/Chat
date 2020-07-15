@@ -78,7 +78,7 @@ function fillMessages(message){
     }
 
     else {
-        messageHeader = '<li class="other-author">' + author + '<span class="date">' + dateTime + '</span> </li>';
+        messageHeader = '<li class="author">' + author + '<span class="date">' + dateTime + '</span> </li>';
         messages = messages + '<div class="left-message">' + messageHeader + '<li class="msg">' + content + '</li><hr></div>';
     }
 
