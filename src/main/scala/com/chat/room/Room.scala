@@ -1,7 +1,7 @@
 package com.chat.room
 
 import akka.actor.{Actor, ActorRef, PoisonPill}
-import com.chat.utils.Formater.messageToJsonStr
+import com.chat.utils.Formater._
 import com.chat.room.Events._
 
 class Room(id: Int) extends Actor {
@@ -12,6 +12,7 @@ class Room(id: Int) extends Actor {
     // Connect user to room
     case JoinRoom(user, actorRef) =>
       users += user -> actorRef
+      users.map(_._2 ! userListToJsonStr(users.keys.toList))
     // Return users connected to the room
     case GetUsers =>
       sender() ! users
@@ -22,6 +23,7 @@ class Room(id: Int) extends Actor {
     // Remove user from room
     case LeaveRoom(user) =>
       users -= user
+      users.map(_._2 ! userListToJsonStr(users.keys.toList))
       if (users.size == 0) context.parent ! RemoveRoom(id)
   }
 }
