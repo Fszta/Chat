@@ -15,6 +15,7 @@
                 <div class="button-wrapper">
                     <button type="button" onclick="javascript:signout()" id="signout" >Signout</button>
                 </div>
+
                 <div>
                     <ul id="users"></ul>
                 </div>
@@ -22,7 +23,7 @@
 
             <div class ="chat-window">
                     <!--<textarea readonly id="chat"></textarea>-->
-                    <ul id="messages" ></ul>
+                    <ul id="messages" id="chat"></ul>
                     <form action="javascript:sendMessage()">
                         <input type="text" id="messageBox" class="sendBar"/>
                         <input type="submit" value="Send" id="send-button"/>

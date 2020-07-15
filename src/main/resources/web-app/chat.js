@@ -12,7 +12,7 @@ function startWs() {
 
     let roomId = prompt("Choose a room");
 
-    ws = new WebSocket("ws://" + location.host + "/chat?userName=" + encodeURIComponent(userName) + "&roomId=" + encodeURIComponent(roomId));
+    ws = new WebSocket("ws://" + location.host + "/api?userName=" + encodeURIComponent(userName) + "&roomId=" + encodeURIComponent(roomId));
     ws.onmessage = function(event) {
 
         console.log(event.data)
@@ -31,7 +31,7 @@ function startWs() {
         else {
             fillMessages(event.data)
             //chatbox.value = chatbox.value + "\n" + event.data;
-            //chatbox.scrollTop = chatbox.scrollHeight;
+            chatbox.scrollTop = chatbox.scrollHeight;
         }
     }
 }
@@ -56,16 +56,17 @@ function getUsers() {
 }
 
 function fillMessages(message){
+    console.log(message)
     let messageHeader;
 
     // Parse message json
     let jsonMessage = JSON.parse(message);
 
     // Extract content
-    let content = jsonMessage.message;
+    let content = jsonMessage.content;
 
     // Extract author name
-    let author = jsonMessage.senderName;
+    let author = jsonMessage.sender;
 
     // Extract and convert timestamp to date
     let dateTime = timestampToDate(jsonMessage.timestamp);
@@ -73,12 +74,12 @@ function fillMessages(message){
     // Format message with header
     if(author === userName){
         messageHeader = '<li class="author">' + author + '<span class="date">' + dateTime + '</span> </li></div>';
-        messages = messages + '<div class="left-message">' +  messageHeader + '<li class="own-message">' + content + '</li></div>' ;
+        messages = messages + '<div class="left-message">' +  messageHeader + '<li class="msg">' + content + '</li><hr></div>' ;
     }
 
     else {
         messageHeader = '<li class="other-author">' + author + '<span class="date">' + dateTime + '</span> </li>';
-        messages = messages + '<div class="right-message">' + messageHeader + '<li class="other-message">' + content + '</li></div>';
+        messages = messages + '<div class="left-message">' + messageHeader + '<li class="msg">' + content + '</li><hr></div>';
     }
 
     document.getElementById("messages").innerHTML = messages;

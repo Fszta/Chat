@@ -1,37 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:500");
-body {
-	background: #adc0ed;
-}
 
 .cont {
-	width: 70%;
+	width: 100%;
 	margin: auto;
-	border-radius: 40px;
-	border: 12px solid #adc0ed;
-	height: 80vh;
+	height: 100%;
 	background: white;
 }
 
 .connected {
 	width: 20%;
-	height: 80vh;
+	height: 100vh;
 	background: #43484f;
 	float: left;
 	font-family: Roboto;
 	color: white;
-	border-radius: 10px 0px 0px 10px;
 }
 
 .chat-window {
-	border-radius: 10px;
 	margin-left: 20%;
 	background: white;
-	height: 70vh;
+	height: 100vh;
 	max-height: 100%;
 }
 
 .sendBar {
-	width: 80%;
+	width: 90%;
 	height: 10vh;
 }
 
@@ -57,7 +50,7 @@ body {
 
 textarea {
 	-webkit-tap-highlight-color: transparent;
-	width: 95%;
+	width: 100%;
 	resize: none;
 	min-height: 8rem;
 	padding: 1rem 1.5rem;
@@ -105,11 +98,12 @@ button {
 }
 
 .mainframe {
-	height: 90vh;
+	height: 100%;
+	width: 95%;
 }
 
 #messages {
-	height: 65vh;
+	height: 90vh;
 	overflow: hidden;
 	overflow-y: scroll
 }
@@ -128,53 +122,6 @@ li {
 	padding-left: 5px;
 	color: #32d95e;
 	font-size: 40px;
-}
-
-.own-message {
-	color: white;
-	font-family: Roboto;
-	margin: 20px;
-	padding: 20px;
-	width: 40%;
-	position: relative;
-	border-radius: 8px;
-	background: #35ab4b;
-	border-color: #35ab4b;
-}
-
-.own-message:before {
-	content: "";
-	position: absolute;
-	top: -20px;
-	left: 20px;
-	border-bottom: 20px solid  #35ab4b;
-	border-bottom-color: inherit;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-}
-
-.other-message {
-	color: white;
-	position: relative;
-	font-family: Roboto;
-	margin: 20px;
-	padding: 20px;
-	width: 40%;
-	border-radius: 8px;
-	background: #8098d1;
-	border-color: #8098d1;
-}
-
-.other-message::after{
-	content: "";
-	top: -20px;
-	right: 20px;
-    position: absolute;
-    right: 0;
-	border-bottom: 20px solid  #8098d1;
-	border-bottom-color: inherit;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
 }
 
 .author {
@@ -196,4 +143,35 @@ li {
 
 .right-message {
     float:right;
+}
+
+.left-message {
+   padding-top:1.5em;
+}
+
+.title {
+  text-align: center;
+  top: 5%;
+  color: white;
+  font-family:Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  padding-left: 10%;
+  text-align: left;
+  }
+
+.msg {
+  color: #2C2D30;
+  font-family:Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+hr {
+      border: 1px solid #d9d3e0;
+      margin-left: 0px;
+       width: 30%;
 }
