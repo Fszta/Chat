@@ -21,16 +21,4 @@ class ChatTest extends FunSuite with Matchers with ScalatestRouteTest {
         isWebSocketUpgrade shouldEqual true
       }
   }
-
-  test("should receive success message on connection") {
-    val wsClient = WSProbe()
-    val roomHandler = system.actorOf(Props(new RoomHandler))
-    val chat = new Chat(roomHandler)
-
-    WS("/api?userName=Tester&roomId=1", wsClient.flow) ~> chat.wsRoute ~>
-      check {
-        isWebSocketUpgrade shouldEqual true
-        wsClient.expectMessage("Successfully connected")
-      }
-  }
 }
