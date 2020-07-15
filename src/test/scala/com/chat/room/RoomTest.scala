@@ -8,7 +8,6 @@ import org.scalatest.{FunSuite, Matchers}
 import scala.concurrent.duration._
 import scala.concurrent.Await
 import com.chat.room.Events._
-import com.chat.utils.Formater.messageToJsonStr
 import com.chat.Chat
 
 
@@ -67,24 +66,6 @@ class RoomTest extends FunSuite with Matchers with ScalatestRouteTest {
       val futureGetUsersAfterLeave = rooms(testRoomId) ? GetUsers
       val usersAfterLeaveRoom = Await.result(futureGetUsersAfterLeave, timeout.duration).asInstanceOf[scala.collection.mutable.Map[User, ActorRef]]
       assert(usersAfterLeaveRoom.size == 0)
-    }
-  }
-
-  test("shoud send a message & receive it back") {
-    implicit val timeout = Timeout(1.seconds)
-    val roomHandler = system.actorOf(Props(new RoomHandler))
-    val chat = new Chat(roomHandler)
-    val wsClient = WSProbe()
-    val testRoomId = 2
-    val actualTimestamp = java.lang.System.currentTimeMillis()
-    val expectedtestMessage = messageToJsonStr(Message("Tester", "test message",actualTimestamp))
-
-    WS(s"/api?userName=Tester&roomId=$testRoomId", wsClient.flow) ~> chat.wsRoute ~> check {
-      wsClient.expectMessage("Successfully connected")
-      val futureGetRooms = roomHandler ? GetRooms
-      val rooms = Await.result(futureGetRooms, timeout.duration).asInstanceOf[scala.collection.mutable.Map[Int, ActorRef]]
-      rooms(testRoomId) ! SendMessage("Tester", "test message", actualTimestamp)
-      wsClient.expectMessage(expectedtestMessage)
     }
   }
 }
